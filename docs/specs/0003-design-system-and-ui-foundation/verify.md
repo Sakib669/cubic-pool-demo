@@ -2,9 +2,9 @@
 _Steps derived from spec 0003 acceptance criteria. `/check verify` runs these; `/test` locks the durable ones._
 
 ## Commands
-- [ ] `pnpm test` → Vitest unit tests pass across base UI components, button variants, and layout structure → AC-3, AC-4, AC-5, AC-6, AC-7, AC-8, AC-9, AC-10
-- [ ] `pnpm build` → Next.js production build succeeds with clean TypeScript check and valid layout shell → AC-1, AC-2, AC-10
-- [ ] `pnpm lint` → ESLint runs across all components with zero errors or accessibility warnings → AC-10
+- [x] `pnpm test` → Vitest unit tests pass across base UI components, button variants, and layout structure → AC-3, AC-4, AC-5, AC-6, AC-7, AC-8, AC-9, AC-10
+- [x] `pnpm build` → Next.js production build succeeds with clean TypeScript check and valid layout shell → AC-1, AC-2, AC-10
+- [x] `pnpm lint` → ESLint runs across all components with zero errors or accessibility warnings → AC-10
 
 ## Acceptance criteria coverage
 - AC-1 Luxury design tokens defined in globals.css with @theme

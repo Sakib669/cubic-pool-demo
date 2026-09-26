@@ -58,7 +58,7 @@ Spec [0003](../specs/0003-design-system-and-ui-foundation/index.md) · code in s
   - [x] Accessible base UI components: Button, Container, Section, SectionHeading, Badge (AC-3, AC-4, AC-5, AC-6)
   - [x] Responsive layout shell: Header, MobileNav, Footer with Server Component data fetching (AC-7, AC-8, AC-9, AC-10)
   - [x] Component unit tests and accessibility verification (AC-3, AC-7, AC-8, AC-9, AC-10)
-- [ ] Verify it: /check verify design system & ui foundation
+- [x] Verify it: /check verify design system & ui foundation
 - [ ] Test it: /test design system & ui foundation
 
 ## Slice 1: Products catalog & detail modal
