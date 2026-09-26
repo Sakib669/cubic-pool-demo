@@ -1,10 +1,21 @@
-# Verify: Products catalog and detail modal · spec 0004 · created 2026-09-26
-_Steps derived from spec 0004 acceptance criteria. `/check verify` runs these; `/test` locks the durable ones._
+# Verify: Products catalog and detail modal · spec 0004 · updated 2026-09-26
+_Steps derived from spec 0004 acceptance criteria and value sourcing. `/check verify` runs these; `/test` locks the durable ones._
+
+## UI / manual
+- [ ] Visit `/products` → expect responsive grid of all pool models with cover images, category badges, dimensions summary, and starting price tier → AC-1, AC-5
+- [ ] Click on "Infinity Edge Pools" category tab → expect URL to update to `?category=infinity-pools` without page reload and grid to filter instantly → AC-2, AC-3
+- [ ] Filter by a category with no matching pools → expect empty state message and "Reset to All Pools" button that restores catalog → AC-4
+- [ ] Click "View Specifications" on "Azure Horizon Infinity" → expect URL to update to `?product=azure-horizon-infinity` and accessible modal to open → AC-6, AC-7
+- [ ] In detail modal, press Tab repeatedly → expect focus to remain trapped within modal, and press Escape key → expect modal to close and focus to return to triggering element → AC-8
+- [ ] In detail modal, click gallery thumbnails to switch active photo, and click main preview → expect full size lightbox zoom overlay to open with Escape close → AC-9
+- [ ] In detail modal, inspect engineering specs table and inclusions checklist → expect dimensions, water volume, shell material, and warranty to match data source → AC-10
+- [ ] In detail modal, click "Enquire About This Pool" button → expect link to point to `/contact?product=azure-horizon-infinity` → AC-11
+- [ ] Directly load `/products/azure-horizon-infinity` in browser → expect dedicated full page fallback to render with breadcrumbs, gallery, and specs table → AC-12
 
 ## Commands
-- [ ] `pnpm test` → Vitest unit tests pass across product catalog filtering, category tabs, product card, modal focus management, and specifications table → AC-1, AC-2, AC-3, AC-4, AC-5, AC-6, AC-7, AC-8, AC-9, AC-10, AC-11, AC-12
-- [ ] `pnpm build` → Next.js production build succeeds with clean TypeScript check and valid products route static rendering → AC-1, AC-7, AC-12
-- [ ] `pnpm lint` → ESLint runs across all catalog components with zero errors or accessibility warnings → AC-8
+- [ ] `pnpm test` → Vitest test suite passes across all product components and routes with zero failures → AC-1 through AC-12
+- [ ] `pnpm build` → Next.js production build succeeds with valid static generation for `/products` and `/products/[slug]` → AC-1, AC-12
+- [ ] `pnpm lint` → ESLint runs across all files with zero errors and zero warnings → AC-8
 
 ## Acceptance criteria coverage
 - AC-1 Catalog page at /products fetches and displays all products in a responsive grid using Server Components
