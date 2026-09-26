@@ -11,7 +11,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 
 | # | Feature | Phase | Status |
 |---|---------|-------|--------|
-| 1 | Stack & architecture | Foundation | planned |
+| 1 | Stack & architecture | Foundation | in-progress |
 | 2 | Coding standards & tooling | Foundation | planned |
 | 3 | Data model & CMS adapter | Foundation | planned |
 | 4 | Design system & UI foundation | Foundation | planned |
@@ -23,10 +23,12 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 
 ## Foundations
 
-### 1. Stack & architecture · needs a decision
+### 1. Stack & architecture · in-progress
 Decide the project architecture, framework setup, folder structure, and pnpm dependencies, then scaffold a runnable Next.js application.
 **Done when:** the architecture spec records the stack decisions and the scaffold boots locally with pnpm and passes build.
-- [ ] Decide the stack (spec): /architect stack & architecture
+- [x] Decide the stack (spec): /architect stack & architecture
+- [ ] Scaffold from the decision: /develop stack & architecture
+Spec [0001](../specs/0001-stack-and-architecture.md)
 
 ### 2. Coding standards & tooling
 Capture development conventions into root AGENTS.md, configure linting, formatting, testing tools, and git commit practices.
