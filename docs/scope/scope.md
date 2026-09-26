@@ -16,7 +16,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 | 3 | Data model & CMS adapter | Foundation | done |
 | 4 | Design system & UI foundation | Foundation | done |
 | 5 | Products catalog & detail modal | Slice 1 | done |
-| 6 | Gallery & lightbox | Slice 2 | planned |
+| 6 | Gallery & lightbox | Slice 2 | done |
 | 7 | About Us & company trust | Slice 3 | planned |
 | 8 | Contact & enquiry pipeline | Slice 4 | planned |
 | 9 | SEO, performance & accessibility | Slice 5 | planned |
@@ -79,10 +79,19 @@ Spec [0004](../specs/0004-products-catalog-and-detail-modal/index.md) · code in
 
 ## Slice 2: Gallery & lightbox
 
-### 6. Gallery & lightbox · needs a decision
+### 6. Gallery & lightbox · done
 An interactive pool design gallery with category filter chips and a full screen lightbox featuring captions, thumbnail strip, keyboard navigation, and touch swipe gestures.
 **Done when:** users can filter pool projects by style, open any photo in the lightbox, navigate with keyboard arrows or touch swipe, and see rich captions.
-- [ ] Design it (spec): /architect gallery & lightbox
+- [x] Design it (spec): /architect gallery & lightbox
+Spec [0005](../specs/0005-gallery-and-lightbox/index.md) · code in src/components/gallery/, src/app/gallery/
+- [x] Build it: /develop gallery & lightbox
+  - [x] Style filter navigation chips and responsive gallery cards (AC-2, AC-4)
+  - [x] Interactive gallery container with URL query synchronization (AC-1, AC-3, AC-12)
+  - [x] Accessible full screen lightbox with keyboard navigation and touch swipe (AC-5, AC-6, AC-7, AC-8, AC-11)
+  - [x] Rich captions panel and related pool model link referral (AC-9, AC-10)
+  - [x] Server rendered /gallery page and component test suite (AC-1, AC-6)
+- [x] Verify it: /check verify gallery & lightbox
+- [x] Test it: /test gallery & lightbox
 
 ## Slice 3: About Us & company trust
 
