@@ -2,11 +2,52 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { getCmsAdapter } from "@/lib/data";
 import { Header, Footer } from "@/components/layout";
+import { LocalBusinessJsonLd } from "@/components/seo";
 
 export const metadata: Metadata = {
-  title: "Cubic Pools Group | Luxury Architectural Swimming Pools",
+  metadataBase: new URL("https://cubicpoolsgroup.com"),
+  title: {
+    default: "Cubic Pools Group | Luxury Architectural Swimming Pools",
+    template: "%s | Cubic Pools Group",
+  },
   description:
-    "Bespoke architectural swimming pools engineered for prestige Australian homes. Custom concrete, infinity edge, and resort pool construction.",
+    "Bespoke architectural swimming pools engineered for prestige Australian homes. Custom concrete, infinity edge, and resort pool construction across Sydney and Australia.",
+  keywords: [
+    "luxury swimming pools",
+    "architectural pools",
+    "infinity pools",
+    "concrete pools Sydney",
+    "custom pool builders Australia",
+    "Double Bay pool showroom",
+  ],
+  authors: [{ name: "Cubic Pools Group" }],
+  creator: "Cubic Pools Group",
+  openGraph: {
+    title: "Cubic Pools Group | Luxury Architectural Swimming Pools",
+    description:
+      "Bespoke architectural swimming pools engineered for prestige Australian homes. Custom concrete, infinity edge, and resort pool construction.",
+    url: "https://cubicpoolsgroup.com",
+    siteName: "Cubic Pools Group",
+    locale: "en_AU",
+    type: "website",
+    images: [
+      {
+        url: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&h=630&q=85",
+        width: 1200,
+        height: 630,
+        alt: "Cubic Pools Group Luxury Architectural Pool",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cubic Pools Group | Luxury Architectural Swimming Pools",
+    description:
+      "Bespoke architectural swimming pools engineered for prestige Australian homes.",
+    images: [
+      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1200&h=630&q=85",
+    ],
+  },
 };
 
 export default async function RootLayout({
@@ -23,6 +64,9 @@ export default async function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full flex flex-col bg-travertine-100 text-slate-800 font-sans">
+        {/* Inject Schema.org LocalBusiness JSON-LD */}
+        <LocalBusinessJsonLd companyInfo={companyInfo} />
+
         {/* Accessible skip link */}
         <a
           href="#main-content"

@@ -19,7 +19,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 | 6 | Gallery & lightbox | Slice 2 | done |
 | 7 | About Us & company trust | Slice 3 | done |
 | 8 | Contact & enquiry pipeline | Slice 4 | done |
-| 9 | SEO, performance & accessibility | Slice 5 | planned |
+| 9 | SEO, performance & accessibility | Slice 5 | done |
 
 ## Foundations
 
@@ -127,10 +127,19 @@ Spec [0007](../specs/0007-contact-and-enquiry-pipeline/index.md) · code in src/
 
 ## Slice 5: SEO, performance & accessibility
 
-### 9. SEO, performance & accessibility · needs a decision
+### 9. SEO, performance & accessibility · done
 Structured data schema markup, Open Graph tags, sitemap, robots configuration, custom branded error pages, and performance optimizations meeting Lighthouse targets.
 **Done when:** all pages achieve Lighthouse scores of 90 or above, structured data validates, sitemap and robots are active, and WCAG 2.2 AA accessibility requirements pass.
-- [ ] Design it (spec): /architect seo, performance & accessibility
+- [x] Design it (spec): /architect seo, performance & accessibility
+Spec [0008](../specs/0008-seo-performance-and-accessibility/index.md) · code in src/components/seo/, src/app/
+- [x] Build it: /develop seo, performance & accessibility
+  - [x] Schema.org JSON-LD components (LocalBusiness, Product, ImageGallery) (AC-4)
+  - [x] Dynamic XML sitemap and robots directives (AC-1, AC-2)
+  - [x] Root metadata and Open Graph enhancements (AC-3)
+  - [x] Branded accessible error boundaries and 404 page (AC-5, AC-6, AC-7)
+  - [x] WCAG 2.2 AA compliance review and automated test suite (AC-8, AC-9)
+- [x] Verify it: /check verify seo, performance & accessibility
+- [x] Test it: /test seo, performance & accessibility
 
 ## Deferred
 Out of scope for the current build pass, kept so the plan stays honest.
