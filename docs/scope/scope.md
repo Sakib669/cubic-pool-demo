@@ -15,7 +15,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 | 2 | Coding standards & tooling | Foundation | done |
 | 3 | Data model & CMS adapter | Foundation | done |
 | 4 | Design system & UI foundation | Foundation | done |
-| 5 | Products catalog & detail modal | Slice 1 | planned |
+| 5 | Products catalog & detail modal | Slice 1 | in-progress |
 | 6 | Gallery & lightbox | Slice 2 | planned |
 | 7 | About Us & company trust | Slice 3 | planned |
 | 8 | Contact & enquiry pipeline | Slice 4 | planned |
@@ -63,10 +63,19 @@ Spec [0003](../specs/0003-design-system-and-ui-foundation/index.md) · code in s
 
 ## Slice 1: Products catalog & detail modal
 
-### 5. Products catalog & detail modal · needs a decision
+### 5. Products catalog & detail modal · in-progress
 The core tracer bullet slice connecting data, category filtering, responsive product cards, and a full size product detail modal with image zoom, specs table, focus trap, and URL sync.
 **Done when:** users can filter products by category, click any product to open the accessible detail modal with full specs and image zoom, and share or bookmark the product URL.
-- [ ] Design it (spec): /architect products catalog & detail modal
+- [x] Design it (spec): /architect products catalog & detail modal
+Spec [0004](../specs/0004-products-catalog-and-detail-modal/index.md) · code in src/components/products/, src/app/products/
+- [x] Build it: /develop products catalog & detail modal
+  - [x] Category filter tabs, crawler links, and responsive product cards (AC-2, AC-5)
+  - [x] Interactive catalog container with URL category sync and empty state (AC-1, AC-3, AC-4)
+  - [x] Accessible product detail modal with focus trap and URL sync (AC-6, AC-7, AC-8)
+  - [x] Image gallery with zoom lightbox, technical specs table, and enquiry CTA (AC-9, AC-10, AC-11)
+  - [x] Dedicated fallback route /products/[slug] and component test suite (AC-12)
+- [ ] Verify it: /check verify products catalog & detail modal
+- [ ] Test it: /test products catalog & detail modal
 
 ## Slice 2: Gallery & lightbox
 
