@@ -18,7 +18,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 | 5 | Products catalog & detail modal | Slice 1 | done |
 | 6 | Gallery & lightbox | Slice 2 | done |
 | 7 | About Us & company trust | Slice 3 | done |
-| 8 | Contact & enquiry pipeline | Slice 4 | planned |
+| 8 | Contact & enquiry pipeline | Slice 4 | done |
 | 9 | SEO, performance & accessibility | Slice 5 | planned |
 
 ## Foundations
@@ -111,10 +111,19 @@ Spec [0006](../specs/0006-about-us-and-company-trust/index.md) · code in src/co
 
 ## Slice 4: Contact & enquiry pipeline
 
-### 8. Contact & enquiry pipeline · needs a decision
+### 8. Contact & enquiry pipeline · done
 A comprehensive contact page with office information, accessible map embed, Zod validated enquiry form with product prefill, and an API endpoint with spam protection.
 **Done when:** prospective clients can submit validated enquiries, product referral links prefill the form, and the API endpoint validates inputs and protects against duplicate submissions.
-- [ ] Design it (spec): /architect contact & enquiry pipeline
+- [x] Design it (spec): /architect contact & enquiry pipeline
+Spec [0007](../specs/0007-contact-and-enquiry-pipeline/index.md) · code in src/components/contact/, src/app/contact/, src/app/api/contact/
+- [x] Build it: /develop contact & enquiry pipeline
+  - [x] API endpoint with Zod validation and honeypot spam protection (AC-7)
+  - [x] Office details panel and interactive showroom map card (AC-2, AC-3)
+  - [x] Accessible enquiry form with product prefill and real time errors (AC-4, AC-5, AC-6)
+  - [x] Submission loading states, confirmation card, and retry banner (AC-8, AC-9, AC-10)
+  - [x] Server Component /contact route with prefetching (AC-1, AC-11)
+- [x] Verify it: /check verify contact & enquiry pipeline
+- [x] Test it: /test contact & enquiry pipeline
 
 ## Slice 5: SEO, performance & accessibility
 
