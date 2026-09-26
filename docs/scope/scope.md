@@ -14,7 +14,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 | 1 | Stack & architecture | Foundation | done |
 | 2 | Coding standards & tooling | Foundation | done |
 | 3 | Data model & CMS adapter | Foundation | done |
-| 4 | Design system & UI foundation | Foundation | planned |
+| 4 | Design system & UI foundation | Foundation | in-progress |
 | 5 | Products catalog & detail modal | Slice 1 | planned |
 | 6 | Gallery & lightbox | Slice 2 | planned |
 | 7 | About Us & company trust | Slice 3 | planned |
@@ -48,10 +48,18 @@ Spec [0002](../specs/0002-data-model-and-cms-adapter/index.md) · code in src/ty
 - [x] Verify it: /check verify data model & cms adapter
 - [x] Test it: /test data model & cms adapter
 
-### 4. Design system & UI foundation · needs a decision
+### 4. Design system & UI foundation · in-progress
 Establish design tokens, typography, luxury pool aesthetic colors, base accessible components, and the main layout shell with header, footer, and navigation.
 **Done when:** design tokens are defined in CSS variables, accessible base components are ready, and the responsive layout shell renders navigation and footer.
-- [ ] Design it (spec): /architect design system & ui foundation
+- [x] Design it (spec): /architect design system & ui foundation
+Spec [0003](../specs/0003-design-system-and-ui-foundation/index.md) · code in src/components/
+- [ ] Build it: /develop design system & ui foundation
+  - [ ] Design tokens, luxury pool colors, and typography setup (AC-1, AC-2)
+  - [ ] Accessible base UI components: Button, Container, Section, SectionHeading, Badge (AC-3, AC-4, AC-5, AC-6)
+  - [ ] Responsive layout shell: Header, MobileNav, Footer with Server Component data fetching (AC-7, AC-8, AC-9, AC-10)
+  - [ ] Component unit tests and accessibility verification (AC-3, AC-7, AC-8, AC-9, AC-10)
+- [ ] Verify it: /check verify design system & ui foundation
+- [ ] Test it: /test design system & ui foundation
 
 ## Slice 1: Products catalog & detail modal
 
