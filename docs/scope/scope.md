@@ -17,7 +17,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 | 4 | Design system & UI foundation | Foundation | done |
 | 5 | Products catalog & detail modal | Slice 1 | done |
 | 6 | Gallery & lightbox | Slice 2 | done |
-| 7 | About Us & company trust | Slice 3 | planned |
+| 7 | About Us & company trust | Slice 3 | done |
 | 8 | Contact & enquiry pipeline | Slice 4 | planned |
 | 9 | SEO, performance & accessibility | Slice 5 | planned |
 
@@ -95,10 +95,19 @@ Spec [0005](../specs/0005-gallery-and-lightbox/index.md) · code in src/componen
 
 ## Slice 3: About Us & company trust
 
-### 7. About Us & company trust · needs a decision
+### 7. About Us & company trust · done
 Company heritage, trust metrics, brand values, builder and architect partnership highlights, and an accessible testimonial carousel with pause controls.
 **Done when:** the about page renders company history, trust statistics, values grid, builder logos, and an accessible carousel that handles long text and empty states gracefully.
-- [ ] Design it (spec): /architect about us & company trust
+- [x] Design it (spec): /architect about us & company trust
+Spec [0006](../specs/0006-about-us-and-company-trust/index.md) · code in src/components/about/, src/app/about/
+- [x] Build it: /develop about us & company trust
+  - [x] Heritage hero narrative and estate imagery (AC-2)
+  - [x] Semantic trust statistics grid (AC-3)
+  - [x] Brand values pillars and architect partnership credentials (AC-4, AC-5)
+  - [x] Accessible testimonial carousel with pause controls and swipe (AC-6, AC-7, AC-8, AC-9)
+  - [x] Showroom consultation banner and /about route (AC-1, AC-10)
+- [x] Verify it: /check verify about us & company trust
+- [x] Test it: /test about us & company trust
 
 ## Slice 4: Contact & enquiry pipeline
 
