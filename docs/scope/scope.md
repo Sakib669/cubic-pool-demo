@@ -11,9 +11,9 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 
 | # | Feature | Phase | Status |
 |---|---------|-------|--------|
-| 1 | Stack & architecture | Foundation | in-progress |
-| 2 | Coding standards & tooling | Foundation | planned |
-| 3 | Data model & CMS adapter | Foundation | planned |
+| 1 | Stack & architecture | Foundation | done |
+| 2 | Coding standards & tooling | Foundation | done |
+| 3 | Data model & CMS adapter | Foundation | in-progress |
 | 4 | Design system & UI foundation | Foundation | planned |
 | 5 | Products catalog & detail modal | Slice 1 | planned |
 | 6 | Gallery & lightbox | Slice 2 | planned |
@@ -23,22 +23,30 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 
 ## Foundations
 
-### 1. Stack & architecture · in-progress
+### 1. Stack & architecture · done
 Decide the project architecture, framework setup, folder structure, and pnpm dependencies, then scaffold a runnable Next.js application.
 **Done when:** the architecture spec records the stack decisions and the scaffold boots locally with pnpm and passes build.
 - [x] Decide the stack (spec): /architect stack & architecture
-- [ ] Scaffold from the decision: /develop stack & architecture
-Spec [0001](../specs/0001-stack-and-architecture.md)
+- [x] Scaffold from the decision: /develop stack & architecture
+Spec [0001](../specs/0001-stack-and-architecture/index.md) · code in src/
 
-### 2. Coding standards & tooling
+### 2. Coding standards & tooling · done
 Capture development conventions into root AGENTS.md, configure linting, formatting, testing tools, and git commit practices.
 **Done when:** root AGENTS.md documents the project conventions, and lint, format, and test suites run cleanly.
-- [ ] Capture conventions + tooling choices: /audit
+- [x] Capture conventions + tooling choices: /audit
 
-### 3. Data model & CMS adapter · needs a decision
+### 3. Data model & CMS adapter · in-progress
 Define TypeScript interfaces and a decoupled CMS adapter interface with a typed local mock provider for products, gallery items, testimonials, and company details.
 **Done when:** data contracts are established and the local mock adapter provides complete realistic data that a future headless CMS can fulfill.
-- [ ] Design it (spec): /architect data model & cms adapter
+- [x] Design it (spec): /architect data model & cms adapter
+Spec [0002](../specs/0002-data-model-and-cms-adapter/index.md)
+- [ ] Build it: /develop data model & cms adapter
+  - [ ] Zod domain schemas and inferred types (AC-1 to AC-6)
+  - [ ] ICmsAdapter async contract and provider factory (AC-7, AC-8, AC-11)
+  - [ ] Realistic luxury pool mock fixtures and local adapter implementation (AC-9, AC-10)
+  - [ ] Vitest test suite for schemas and query filters (AC-12)
+- [ ] Verify it: /check verify data model & cms adapter
+- [ ] Test it: /test data model & cms adapter
 
 ### 4. Design system & UI foundation · needs a decision
 Establish design tokens, typography, luxury pool aesthetic colors, base accessible components, and the main layout shell with header, footer, and navigation.
