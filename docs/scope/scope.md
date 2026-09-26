@@ -45,7 +45,7 @@ Spec [0002](../specs/0002-data-model-and-cms-adapter/index.md) · code in src/ty
   - [x] ICmsAdapter async contract and provider factory (AC-7, AC-8, AC-11)
   - [x] Realistic luxury pool mock fixtures and local adapter implementation (AC-9, AC-10)
   - [x] Vitest test suite for schemas and query filters (AC-12)
-- [ ] Verify it: /check verify data model & cms adapter
+- [x] Verify it: /check verify data model & cms adapter
 - [ ] Test it: /test data model & cms adapter
 
 ### 4. Design system & UI foundation · needs a decision
