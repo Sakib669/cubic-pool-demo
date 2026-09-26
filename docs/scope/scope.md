@@ -39,12 +39,12 @@ Capture development conventions into root AGENTS.md, configure linting, formatti
 Define TypeScript interfaces and a decoupled CMS adapter interface with a typed local mock provider for products, gallery items, testimonials, and company details.
 **Done when:** data contracts are established and the local mock adapter provides complete realistic data that a future headless CMS can fulfill.
 - [x] Design it (spec): /architect data model & cms adapter
-Spec [0002](../specs/0002-data-model-and-cms-adapter/index.md)
-- [ ] Build it: /develop data model & cms adapter
-  - [ ] Zod domain schemas and inferred types (AC-1 to AC-6)
-  - [ ] ICmsAdapter async contract and provider factory (AC-7, AC-8, AC-11)
-  - [ ] Realistic luxury pool mock fixtures and local adapter implementation (AC-9, AC-10)
-  - [ ] Vitest test suite for schemas and query filters (AC-12)
+Spec [0002](../specs/0002-data-model-and-cms-adapter/index.md) · code in src/types/, src/lib/data/
+- [x] Build it: /develop data model & cms adapter
+  - [x] Zod domain schemas and inferred types (AC-1 to AC-6)
+  - [x] ICmsAdapter async contract and provider factory (AC-7, AC-8, AC-11)
+  - [x] Realistic luxury pool mock fixtures and local adapter implementation (AC-9, AC-10)
+  - [x] Vitest test suite for schemas and query filters (AC-12)
 - [ ] Verify it: /check verify data model & cms adapter
 - [ ] Test it: /test data model & cms adapter
 

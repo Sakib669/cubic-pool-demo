@@ -1,7 +1,7 @@
 # 0002. Define Data Model and Decoupled CMS Adapter
 
 **Date**: 2026-09-26
-**Status**: Proposed
+**Status**: In Progress
 
 ## Summary
 
@@ -158,12 +158,12 @@ All catalog reading queries are public with no authentication required. Contact 
 
 ## Build plan
 
-- [ ] Install zod dependency via pnpm and configure TypeScript types in `src/types/index.ts` (satisfies AC-1, AC-2, AC-3, AC-4, AC-5, AC-6)
-- [ ] Define `ICmsAdapter` contract in `src/lib/data/adapter.ts` with typed async query and mutation methods (satisfies AC-7, AC-8)
-- [ ] Create realistic luxury pool mock datasets in `src/lib/data/mock/` for categories, products, gallery projects, testimonials, and company details (satisfies AC-9)
-- [ ] Implement `LocalMockCmsAdapter` in `src/lib/data/mock-adapter.ts` supporting filtering, slug lookups, null fallback, and enquiry submission (satisfies AC-7, AC-8, AC-10)
-- [ ] Create adapter factory export in `src/lib/data/index.ts` with singleton instance (satisfies AC-11)
-- [ ] Add Vitest test suite in `src/lib/data/__tests__/adapter.test.ts` verifying schema parsing and query filters (satisfies AC-12)
+- [x] Install zod dependency via pnpm and configure TypeScript types in `src/types/index.ts` (satisfies AC-1, AC-2, AC-3, AC-4, AC-5, AC-6)
+- [x] Define `ICmsAdapter` contract in `src/lib/data/adapter.ts` with typed async query and mutation methods (satisfies AC-7, AC-8)
+- [x] Create realistic luxury pool mock datasets in `src/lib/data/mock/` for categories, products, gallery projects, testimonials, and company details (satisfies AC-9)
+- [x] Implement `LocalMockCmsAdapter` in `src/lib/data/mock-adapter.ts` supporting filtering, slug lookups, null fallback, and enquiry submission (satisfies AC-7, AC-8, AC-10)
+- [x] Create adapter factory export in `src/lib/data/index.ts` with singleton instance (satisfies AC-11)
+- [x] Add Vitest test suite in `src/lib/data/__tests__/adapter.test.ts` verifying schema parsing and query filters (satisfies AC-12)
 
 ## Consequences
 
