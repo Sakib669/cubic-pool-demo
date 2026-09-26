@@ -169,6 +169,42 @@ describe("Data Model & CMS Adapter", () => {
       expect(result.success).toBe(true);
       expect(result.id).toMatch(/^enq-/);
     });
+
+    it("handles case-insensitivity and whitespace trimming for all slug lookups (AC-8)", async () => {
+      const product = await adapter.getProductBySlug("  AZURE-HORIZON-INFINITY  ");
+      expect(product).not.toBeNull();
+      expect(product?.id).toBe("prod-azure-horizon");
+
+      const category = await adapter.getCategoryBySlug("  INFINITY-POOLS  ");
+      expect(category).not.toBeNull();
+      expect(category?.id).toBe("cat-infinity");
+
+      const project = await adapter.getProjectBySlug("  THE-WHITSUNDAY-CLIFF-RESIDENCE  ");
+      expect(project).not.toBeNull();
+      expect(project?.id).toBe("proj-whitsunday-cliff");
+    });
+
+    it("handles empty or whitespace search queries gracefully by returning all products (AC-10)", async () => {
+      const allProducts = await adapter.getProducts();
+      const whitespaceResults = await adapter.getProducts({ search: "   " });
+      expect(whitespaceResults.length).toBe(allProducts.length);
+    });
+
+    it("returns empty array when filtering by unknown category slug or search query with no match (AC-10)", async () => {
+      const unknownCategory = await adapter.getProducts({ categorySlug: "unknown-category-slug" });
+      expect(unknownCategory).toEqual([]);
+
+      const noMatchSearch = await adapter.getProducts({ search: "xyz-no-such-pool-ever" });
+      expect(noMatchSearch).toEqual([]);
+    });
+
+    it("filters gallery projects case-insensitively and returns empty array on unknown style", async () => {
+      const lowercaseStyle = await adapter.getGalleryProjects({ style: "infinity" });
+      expect(lowercaseStyle.length).toBe(1);
+
+      const unknownStyle = await adapter.getGalleryProjects({ style: "non-existent-style" });
+      expect(unknownStyle).toEqual([]);
+    });
   });
 
   describe("Singleton & Provider Factory (AC-11)", () => {

@@ -13,7 +13,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 |---|---------|-------|--------|
 | 1 | Stack & architecture | Foundation | done |
 | 2 | Coding standards & tooling | Foundation | done |
-| 3 | Data model & CMS adapter | Foundation | in-progress |
+| 3 | Data model & CMS adapter | Foundation | done |
 | 4 | Design system & UI foundation | Foundation | planned |
 | 5 | Products catalog & detail modal | Slice 1 | planned |
 | 6 | Gallery & lightbox | Slice 2 | planned |
@@ -35,7 +35,7 @@ Capture development conventions into root AGENTS.md, configure linting, formatti
 **Done when:** root AGENTS.md documents the project conventions, and lint, format, and test suites run cleanly.
 - [x] Capture conventions + tooling choices: /audit
 
-### 3. Data model & CMS adapter · in-progress
+### 3. Data model & CMS adapter · done
 Define TypeScript interfaces and a decoupled CMS adapter interface with a typed local mock provider for products, gallery items, testimonials, and company details.
 **Done when:** data contracts are established and the local mock adapter provides complete realistic data that a future headless CMS can fulfill.
 - [x] Design it (spec): /architect data model & cms adapter
@@ -46,7 +46,7 @@ Spec [0002](../specs/0002-data-model-and-cms-adapter/index.md) · code in src/ty
   - [x] Realistic luxury pool mock fixtures and local adapter implementation (AC-9, AC-10)
   - [x] Vitest test suite for schemas and query filters (AC-12)
 - [x] Verify it: /check verify data model & cms adapter
-- [ ] Test it: /test data model & cms adapter
+- [x] Test it: /test data model & cms adapter
 
 ### 4. Design system & UI foundation · needs a decision
 Establish design tokens, typography, luxury pool aesthetic colors, base accessible components, and the main layout shell with header, footer, and navigation.
