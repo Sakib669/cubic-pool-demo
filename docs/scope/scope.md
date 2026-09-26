@@ -53,11 +53,11 @@ Establish design tokens, typography, luxury pool aesthetic colors, base accessib
 **Done when:** design tokens are defined in CSS variables, accessible base components are ready, and the responsive layout shell renders navigation and footer.
 - [x] Design it (spec): /architect design system & ui foundation
 Spec [0003](../specs/0003-design-system-and-ui-foundation/index.md) · code in src/components/
-- [ ] Build it: /develop design system & ui foundation
-  - [ ] Design tokens, luxury pool colors, and typography setup (AC-1, AC-2)
-  - [ ] Accessible base UI components: Button, Container, Section, SectionHeading, Badge (AC-3, AC-4, AC-5, AC-6)
-  - [ ] Responsive layout shell: Header, MobileNav, Footer with Server Component data fetching (AC-7, AC-8, AC-9, AC-10)
-  - [ ] Component unit tests and accessibility verification (AC-3, AC-7, AC-8, AC-9, AC-10)
+- [x] Build it: /develop design system & ui foundation
+  - [x] Design tokens, luxury pool colors, and typography setup (AC-1, AC-2)
+  - [x] Accessible base UI components: Button, Container, Section, SectionHeading, Badge (AC-3, AC-4, AC-5, AC-6)
+  - [x] Responsive layout shell: Header, MobileNav, Footer with Server Component data fetching (AC-7, AC-8, AC-9, AC-10)
+  - [x] Component unit tests and accessibility verification (AC-3, AC-7, AC-8, AC-9, AC-10)
 - [ ] Verify it: /check verify design system & ui foundation
 - [ ] Test it: /test design system & ui foundation
 

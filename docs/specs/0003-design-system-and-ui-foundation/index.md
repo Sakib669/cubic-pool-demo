@@ -1,7 +1,7 @@
 # 0003. Establish Design System and UI Foundation
 
 **Date**: 2026-09-26
-**Status**: Proposed
+**Status**: In Progress
 
 ## Summary
 
@@ -98,12 +98,12 @@ None.
 
 ## Build plan
 
-1. Install `lucide-react` for accessible icons, satisfying **AC-1**, **AC-7**.
-2. Configure design tokens, luxury pool colors, glassmorphism utilities, and typography fonts (`Inter` and `Playfair Display`) in `src/app/globals.css` and font loaders, satisfying **AC-1**, **AC-2**.
-3. Implement accessible base UI components (`Button`, `Container`, `Section`, `SectionHeading`, `Badge`) in `src/components/ui/`, satisfying **AC-3**, **AC-4**, **AC-5**, **AC-6**.
-4. Implement responsive layout components (`Header`, `MobileNav`, `Footer`) in `src/components/layout/`, satisfying **AC-7**, **AC-8**, **AC-9**.
-5. Update root layout in `src/app/layout.tsx` as an asynchronous Server Component fetching CMS data and integrating skip link, Header, main wrapper with `id="main-content"` and `tabIndex={-1}`, and Footer, satisfying **AC-10**.
-6. Implement unit tests for base UI components and layout rendering, satisfying **AC-3**, **AC-7**, **AC-9**, **AC-10**.
+- [x] 1. Install `lucide-react` for accessible icons, satisfying **AC-1**, **AC-7**.
+- [x] 2. Configure design tokens, luxury pool colors, glassmorphism utilities, and typography fonts (`Inter` and `Playfair Display`) in `src/app/globals.css` and font loaders, satisfying **AC-1**, **AC-2**.
+- [x] 3. Implement accessible base UI components (`Button`, `Container`, `Section`, `SectionHeading`, `Badge`) in `src/components/ui/`, satisfying **AC-3**, **AC-4**, **AC-5**, **AC-6**.
+- [x] 4. Implement responsive layout components (`Header`, `MobileNav`, `Footer`) in `src/components/layout/`, satisfying **AC-7**, **AC-8**, **AC-9**.
+- [x] 5. Update root layout in `src/app/layout.tsx` as an asynchronous Server Component fetching CMS data and integrating skip link, Header, main wrapper with `id="main-content"` and `tabIndex={-1}`, and Footer, satisfying **AC-10**.
+- [x] 6. Implement unit tests for base UI components and layout rendering, satisfying **AC-3**, **AC-7**, **AC-9**, **AC-10**.
 
 ## Consequences
 
