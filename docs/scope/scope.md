@@ -14,7 +14,7 @@ _These are recommendations to keep your build orderly, not requirements. Skip an
 | 1 | Stack & architecture | Foundation | done |
 | 2 | Coding standards & tooling | Foundation | done |
 | 3 | Data model & CMS adapter | Foundation | done |
-| 4 | Design system & UI foundation | Foundation | in-progress |
+| 4 | Design system & UI foundation | Foundation | done |
 | 5 | Products catalog & detail modal | Slice 1 | planned |
 | 6 | Gallery & lightbox | Slice 2 | planned |
 | 7 | About Us & company trust | Slice 3 | planned |
@@ -48,7 +48,7 @@ Spec [0002](../specs/0002-data-model-and-cms-adapter/index.md) · code in src/ty
 - [x] Verify it: /check verify data model & cms adapter
 - [x] Test it: /test data model & cms adapter
 
-### 4. Design system & UI foundation · in-progress
+### 4. Design system & UI foundation · done
 Establish design tokens, typography, luxury pool aesthetic colors, base accessible components, and the main layout shell with header, footer, and navigation.
 **Done when:** design tokens are defined in CSS variables, accessible base components are ready, and the responsive layout shell renders navigation and footer.
 - [x] Design it (spec): /architect design system & ui foundation
