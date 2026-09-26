@@ -200,4 +200,29 @@ describe("Base UI Components & Layout Foundation", () => {
       expect(html).toContain("All rights reserved.");
     });
   });
+
+  describe("Home Page Surface (AC-1, AC-2, AC-10)", () => {
+    it("renders hero section with luxury headline, badges, and action buttons", async () => {
+      // Import Home page dynamically to test rendering
+      const { default: Home } = await import("@/app/page");
+      const html = renderToStaticMarkup(<Home />);
+
+      expect(html).toContain("Engineered for");
+      expect(html).toContain("Grand Living");
+      expect(html).toContain("Architectural Swimming Pools &amp; Spas");
+      expect(html).toContain('href="/products"');
+      expect(html).toContain('href="/gallery"');
+      expect(html).toContain('href="/contact"');
+    });
+
+    it("renders trust pillars with architectural precision details", async () => {
+      const { default: Home } = await import("@/app/page");
+      const html = renderToStaticMarkup(<Home />);
+
+      expect(html).toContain("Structural Mastery");
+      expect(html).toContain("Bespoke Finishes");
+      expect(html).toContain("25 Year Warranty");
+    });
+  });
 });
+

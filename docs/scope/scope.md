@@ -59,7 +59,7 @@ Spec [0003](../specs/0003-design-system-and-ui-foundation/index.md) · code in s
   - [x] Responsive layout shell: Header, MobileNav, Footer with Server Component data fetching (AC-7, AC-8, AC-9, AC-10)
   - [x] Component unit tests and accessibility verification (AC-3, AC-7, AC-8, AC-9, AC-10)
 - [x] Verify it: /check verify design system & ui foundation
-- [ ] Test it: /test design system & ui foundation
+- [x] Test it: /test design system & ui foundation
 
 ## Slice 1: Products catalog & detail modal
 
